@@ -1,9 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS &amp; Git BasicsL</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>What a wonderful world</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="sc_profile" id="profile">
+                <img src="https://static.wikia.nocookie.net/fallout/images/5/53/38_Paradigm_of_Humanity.png" alt="Logo" class="sc_profile_logo">
+                <div class="sc_profile_title1">
+                    Aliaksei Tsetserukou
+                </div>
+                <div class="sc_profile_title2">
+                    Junior Android & JS/FE Developer
+                </div>
+            </section>
+            <section id="contacts">
+                <h2 class="sc_title"</h2> Contacts</h2>
+                <div>
+                    Homyel, Belarus, +375291789228, <a href="mailto:al_t@tut.by">al_t@tut.by</a>
+                </div>
+            </section>
+            <section id="summary">
+                <h2 class="sc_title"> Summary</h2>
+                <div>
+                    Driven and professional junior JS & Android developer with proven knowledge of testing native applications like UI whilst troubleshooting user experience issues and functionality problems.
+                    Able to grasp new concepts quickly. I am seeking a competitive and challenging environment where I can use my ability to communicate with people and take advantage of my knowledge of English.
+                </div>
+            </section>
+            <section id="skills">
+                <h2 class="sc_title"> Skills</h2>
+                <div>
+                    <ul>
+                        <li>Android Development,</li>
+                        <li>Java,</li>
+                        <li>XML,</li>
+                        <li>SQL,</li> 
+                        <li>Object-oriented design,</li> 
+                        <li>Git/Github,</li> 
+                        <li>Android Studio.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="code">
+                <h2 class="sc_title"> Code</h2>
+                <pre>
+                <code>
+                // Hello World Program
+                fun main(args : Array&lt;String&gt;) {
+                    println("Hello, World!")
+                }
+                </code>
+                </pre>
+            </section>
+            <section id="projects">
+                <h2 class="sc_title"> Projects</h2>
+                <ul>
+                <li><a href="http://home.cern/topics/large-hadron-collider">Large Hadron Collider</a></li>
+                <li><a href="https://www.nasa.gov/specials/artemis/">Artemis Mission</a></li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2 class="sc_title"> Education</h2>
+            </section>
+            <div>
+                <img src="https://rs.school/images/partners/logo-rs.svg" alt="RS School Logo" class="rs_logo">
+                @rolling-scopes-school		2022
+            </div>
+            <section id="english">
+                <h2 class="sc_title"> English</h2>
+                <div>
+                    Excellent English at level A2.
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="left_col">
+                <a class="github_icon" href="https://github.com/al-tt" target="_blank">
+                    <img height="35px" src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="GitHub icon">
+                    <span>GitHub: al-tt</span>
+                </a>
+            </div>
+            <div class="centre_col">
+                2022
+            </div>
+            <div class="left_col">
+                <a class="rs_icon" href="https://rs.school/js-stage0/" target="_blank">
+                    <img height="35px" src="https://rs.school/images/rs_school_js.svg" alt="RS School Icon">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
