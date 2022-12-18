@@ -1,1 +1,126 @@
-h1{color:green}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Vollkorn', serif;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+}
+
+@font-face {
+    font-family: IBMPlexSerif;
+     src: url("assets/fonts/IBMPlexSerif-Regular.ttf");
+   }
+
+@font-face {
+    font-family: Courgette;
+     src: url("assets/fonts/Courgette-Regular.ttf");
+   }
+
+.h1_1 {
+    font-family: IBMPlexSerif;
+}
+.h1_2 {
+    font-family: 'Vollkorn', serif;
+}
+.h1_3 {
+    font-family: 'Courgette';
+} 
+.header {
+    border: 1px solid rgb(83, 73, 173);
+}
+.main {
+    border: 1px solid rgb(83, 73, 173);
+}
+.footer {
+    border: 1px solid rgb(83, 73, 173);
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    list-style: none;
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    padding: 0 12px;
+    position: relative;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(82, 78, 102);; 
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: rgb(82, 78, 102);;
+    opacity: 0;
+    transition: .5s;
+}
+.nav-link:hover::after {
+    opacity: 1;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.sc_profile {
+    text-align: center;    
+}
+.sc_profile_title1 {
+    font-family: Courgette;
+    font-size: 16px;
+}
+.sc_title {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 26px;
+    padding-left: 26px;
+}
+.rs_logo {
+    height: 65px;
+    width: 65px;
+}
+.github_icon {
+    display: flex;
+    align-items: center;
+}
+.rs_icon {
+    display: flex;
+    align-items: center;
+}
+.left_col {
+    width: 35%;
+    float: left;
+}
+.centre_col {
+    width: 30%;
+    float: left;
+}
+.right_col {
+    width: 15%;
+    float: right;
+}
